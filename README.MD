@@ -9,7 +9,7 @@ A responsive multi-step form built with HTML, CSS, and JavaScript. Guides users 
 
 Solution link: [https://github.com/DevAdeh/Multi-Step-Form-.git]
 
-Live link: [https://article-preview-component-omega-livid.vercel.app/]
+Live link: [https://multi-step-form-alpha-steel.vercel.app/]
 
 ## Features
 - 3-step form flow with a visual progress bar
