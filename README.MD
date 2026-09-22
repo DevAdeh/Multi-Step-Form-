@@ -2,6 +2,15 @@
 
 A responsive multi-step form built with HTML, CSS, and JavaScript. Guides users through personal info, preferences, and a review step before final submission — with a live progress bar and Next/Back navigation.
 
+## Preview 
+![article preview](./preview.jpg)
+
+## Links
+
+Solution link: [https://github.com/DevAdeh/Multi-Step-Form-.git]
+
+Live link: [https://article-preview-component-omega-livid.vercel.app/]
+
 ## Features
 - 3-step form flow with a visual progress bar
 - Step-by-step validation (only checks the fields on the current step)
