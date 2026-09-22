@@ -3,7 +3,7 @@
 A responsive multi-step form built with HTML, CSS, and JavaScript. Guides users through personal info, preferences, and a review step before final submission — with a live progress bar and Next/Back navigation.
 
 ## Preview 
-![article preview](./preview.png)
+![article preview](./assets/preview.png)
 
 ## Links
 
