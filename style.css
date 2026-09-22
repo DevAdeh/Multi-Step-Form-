@@ -1,0 +1,130 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #F4F1EC;
+  color: #2B2B2B;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-wrapper {
+  background: #ffffff;
+  max-width: 480px;
+  width: 100%;
+  padding: 36px;
+  border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.progress-bar {
+  background: #E5E0D8;
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.progress-fill {
+  background: #C9A227;
+  height: 100%;
+  width: 33.33%;
+  transition: width 0.4s ease;
+}
+
+.step-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.step-label {
+  font-size: 0.7rem;
+  color: #A79E90;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.step-label.active { color: #C9A227; font-weight: 600; }
+
+.form-step { display: none; }
+.form-step.active { display: block; }
+
+.form-step h2 {
+  font-size: 1.3rem;
+  margin-bottom: 24px;
+}
+
+.form-group { margin-bottom: 18px; }
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  color: #6B6157;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #DDD6CB;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #C9A227;
+}
+
+.btn-primary {
+  width: 100%;
+  background: #2B2B2B;
+  color: #fff;
+  border: none;
+  padding: 13px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-primary:hover { background: #C9A227; }
+
+.btn-secondary {
+  width: 100%;
+  background: transparent;
+  border: 1.5px solid #2B2B2B;
+  color: #2B2B2B;
+  padding: 13px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-row {
+  display: flex;
+  gap: 12px;
+}
+
+.review-summary {
+  background: #F9F7F3;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.review-summary strong { color: #2B2B2B; }
+
+.success-message {
+  text-align: center;
+  padding: 20px 0;
+}
+.success-message h2 { margin-bottom: 12px; }
+
+.hidden { display: none; }

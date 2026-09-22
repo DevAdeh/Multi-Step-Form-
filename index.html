@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi-Step Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="form-wrapper">
+
+    <!-- Progress bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <div class="step-labels">
+      <span class="step-label active" data-step="1">Personal Info</span>
+      <span class="step-label" data-step="2">Preferences</span>
+      <span class="step-label" data-step="3">Review</span>
+    </div>
+
+    <form id="multiStepForm">
+
+      <!-- Step 1 -->
+      <div class="form-step active" data-step="1">
+        <h2>Let's start with the basics</h2>
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <button type="button" class="btn-primary next-btn">Next</button>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="form-step" data-step="2">
+        <h2>Tell us your preferences</h2>
+        <div class="form-group">
+          <label for="service">What are you interested in?</label>
+          <select id="service" required>
+            <option value="">Select an option</option>
+            <option value="Web Design">Web Design</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Both">Both</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="budget">Estimated Budget</label>
+          <input type="text" id="budget" placeholder="e.g. ₦50,000">
+        </div>
+        <div class="btn-row">
+          <button type="button" class="btn-secondary back-btn">Back</button>
+          <button type="button" class="btn-primary next-btn">Next</button>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="form-step" data-step="3">
+        <h2>Review your details</h2>
+        <div id="reviewSummary" class="review-summary"></div>
+        <div class="btn-row">
+          <button type="button" class="btn-secondary back-btn">Back</button>
+          <button type="submit" class="btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+
+    <!-- Success message -->
+    <div id="successMessage" class="success-message hidden">
+      <h2>🎉 Thank you!</h2>
+      <p>Your submission has been received. We'll be in touch soon.</p>
+    </div>
+
+  </div>
+  <footer class="attribution">
+    Coded by <a href="https://github.com/DevAdeh">DevAdeh</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
